@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.css"> 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" alt="Logo" 
+        width="30" height="24" class="d-inline-block align-text-top"> Egypt</a>
+      <div class="vr"></div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle border border-success rounded trip" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             <span class="t">T</span>rips
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Cairo</a></li>
+              <li><a class="dropdown-item" href="#">Alex</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">luxor</a></li>
+              <li><a class="dropdown-item" href="#">Aswan</a></li>
+              <li><a class="dropdown-item" href="#">Sharm Elshikh</a></li>
+              <li><a class="dropdown-item" href="#">El Galala</a></li>
+              <li><a class="dropdown-item" href="#">more...</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>          
+        </form>
+        <button type="button" class="btn btn-outline-success mx-2" data-bs-toggle="modal" data-bs-target="#myModal">
+          login
+        </button>
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+    
+              <div class="modal-header bg-info">
+                <h4 class="modal-title text-light">Login</h4>
+                <button type="button" class="btn-close bg-primary-subtle" data-bs-dismiss="modal"></button>
+              </div>
+        
+          
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label text-info">Email address</label>
+                    <input type="email" class="form-control border border-info-subtle" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label text-info ">Password</label>
+                    <input type="password" class="form-control border border-info-subtle" id="exampleInputPassword1">
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label text-info" for="flexSwitchCheckDefault">Remember me</label>
+                  </div>
+                </form>
+              </div> 
+              <div class="modal-footer d-flex justify-content-between">        
+                <button type="button" class="btn btn-info text-light" data-bs-dismiss="modal">Login</button>
+                <button type="button" class="btn btn-info text-light" data-bs-dismiss="modal">close</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+  </nav>  
+  
+    <!-- ///////////////////////////////////////////////////// -->
+      <div id="demo" class="carousel slide " data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/cairo.jpg" alt="1" class="d-block" style="width:100%">
+            <div class="carousel-caption rounded-pill bg-info bg-opacity-50">
+              <h1>Cairo</h1>
+              <p>Smarter.Brighter.Mightier</p>
+              <button type="button" class="btn btn-info">visit us</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/luxor.jpg" alt="2" class="d-block" style="width:100%">
+            <div class="carousel-caption rounded-pill bg-info bg-opacity-50">
+              <h1>luxor</h1>
+              <p>you are welcom</p>
+              <button type="button" class="btn btn-info">visit us</button>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="images/sharm.jpeg" alt="3" class="d-block" style="width:100%">
+            <div class="carousel-caption rounded-pill bg-info bg-opacity-50">
+              <h1>Sharm Elshikh</h1>
+              <p>unbelievably thin.incredibly powerful.</p>
+              <button type="button" class="btn btn-info">visit us</button>
+            </div>  
+          </div>
+          <div class="carousel-item">
+            <img src="images/Aswan.jpg" alt="4" class="d-block" style="width:100%">
+            <div class="carousel-caption rounded-pill bg-info bg-opacity-50">
+              <h1>Aswan</h1>
+              <p>your magic choice !</p>
+              <button type="button" class="btn btn-info">visit us</button>
+            </div>  
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="contact-icons">
+          <div><i class="fab fa-facebook-square az"></i></div>
+          <div><i class="fab fa-whatsapp-square az"></i></div>
+          <div><i class="fab fa-twitter-square  az"></i></div>
+          <div><i class="fab fa-linkedin az"></i></div>
+          <div><i class="fab fa-instagram-square az"></i></div>
+          
+          
+          
+      </div><!-- contact-icons -->
+
+   <!-- ////////////////////////////////////////////////////// -->
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Welcome</h4>
+          <p class="card-text">Are you planinig to visit Egypt? we offer the ultimate tour in Egypt, covering cairo, 
+            Alex. from a one day trip to a 10 day dream vacation, we will take care of all your needs. book hottels.
+            24/7 customer service.
+          </p>
+          <button type="button" class="btn btn-info">Learn more</button>
+          
+        </div>
+      </div>
+   <!-- //////////////////////////////////////////////////////////////////// --> 
+   <div class="bg-primary-subtle rounded mx-auto my-2 " style="height: 100px;" >
+    <div class="m-auto pt-4 " style="width: 700px;" ><h1>Popular distintion in Egypt</h1></div>
+  </div>
+  <!-- //////////////////////////////////////// -->
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+          <strong>Giza City</strong> 
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+        <div class="accordion-body">
+        Major tourist distinations include the millennia-old monuments in the Nile Valley. principal among them are the 
+        pyramids and Great sphinx at Giza 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        <strong>luxor City</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+         Luxor, about 500 KM south of cairo, is the site of ancient city of thebes. it includes the ruins of the 
+         temple complexes at karnak and luxor, which stand within the modern city. in the opposite side of the Nile river lies
+         the monuments, Temples and tombs in the west bank Necropolis, which include the vally of kings and vally of Queens.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+          <strong>Sini Peninsula</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Sini has the beach resorts of Sharm Elshikh, Dahab, Nuweiba and Taba as well as location mentioned in Bible such
+          as Mount Sini ("Jabal Mousa"). Saint Catherien's Monastery may be the oldest working Christian Monstery in the World
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ////////////////////////////////////////////////////// -->
+<div class="card bg-info">
+  <div class="card-body m-auto"><h4>Translate from Arabic to English</h4></div>
+</div>
+<!-- //////////////////////////// -->
+<div class="container mt-3">
+  <h4>Write and translate press here</h4>
+  <form>
+    <div class="mb-3 mt-3">
+      
+      <button onclick="test()" type="button" class="btn btn-primary mb-3" data-bs-toggle="tooltip"
+       data-bs-placement="top"data-bs-custom-class="custom-tooltip" data-bs-title="copy to  clipboard">copy
+      </button>
+      
+      <textarea class="form-control" rows="5" id="comment" name="text">translate:</textarea>
+    </div>
+  </form>
+</div>
+<!-- ////////////////////////////// -->
+<div class="card bg-info">
+  <div class="card-body m-auto"><h4>Translate from Arabic to French</h4></div>
+</div>
+<!-- /////////////////////////// -->
+<div class="container mt-3">
+  <h4>Write and translate press here</h4>
+  <form>
+    <div class="mb-3 mt-3">
+      <button onclick="test()"  type="button" class="btn btn-primary mb-3" data-bs-toggle="tooltip"
+      data-bs-placement="top"data-bs-custom-class="custom-tooltip" data-bs-title="copy to  clipboard" >copy</button>
+      <textarea class="form-control" rows="5" id="comment" name="text">translate:</textarea>
+    </div>
+  </form>
+</div>
+<!-- /////////////////////////////////// -->
+<div class="card bg-info">
+  <div class="card-body m-auto"><h4>Translate from Arabic to German</h4></div>
+</div>
+<!-- ////////////////////////////////////// -->
+<div class="container mt-3">
+  <h4>Write and translate press here</h4>
+  <form>
+    <div class="mb-3 mt-3">
+      <button onclick="test()" type="button" class="btn btn-primary mb-3" data-bs-toggle="tooltip"
+      data-bs-placement="top"data-bs-custom-class="custom-tooltip" data-bs-title="copy to  clipboard" >copy</button>
+      <textarea class="form-control" rows="5" id="comment" name="text">translate:</textarea>
+    </div>
+  </form>
+</div>
+<!-- ///////////////////////// -->
+<div class="photo"></div>
+<!-- /////////////////// -->
+<div class="bg-primary-subtle rounded mx-auto my-2 " style="height: 100px;" >
+  <div class="m-auto pt-4 " style="width: 700px;" ><h1>Popular distintion in Egypt</h1></div>
+</div>
+<!-- /////////////////////// -->
+<div class="containerr bg-body-secondary">
+
+  <div class="row justify-content-evenly pt-5">
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/Cairo Towe.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>Cairo</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>the capital of Egypt</p>
+    </div>
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/qastel.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>Alexandria</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>The bride of the mediterranean</p>
+    </div>
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/Temple of Karnak.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>Luxor</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>The capital on Ancient kingdom</p>
+    </div>
+  </div>
+  <!-- ///////////////////////////////// -->
+  <div class="row justify-content-evenly mt-5">
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/Aswan2.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>Aswan</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>Nubian city in The south of Egypt</p>
+    </div>
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/new capital.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>New Capital</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>The new adminstrative capital</p>
+    </div>
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/sharm2.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>Sharm Elshikh</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>Beautiful city in Egypt</p>
+    </div>
+  </div>
+  <!-- ////////////////////////////////////// -->
+  <div class="row justify-content-evenly py-5">
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/siwa.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>Siwa</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>Sunset Qasis</p>
+    </div>
+    <div class="col-sm-3 rounded bg-white pic">
+      <img src="images/hurghada.jpg" class="rounded-top" alt="#" style="width: 317px; height: 400px;">
+  
+      <div class="clearfix">
+        <span class="float-start"><h2>Hurgada</h2></span>
+        <span class="float-end"> <button type="button" class="btn btn-info mt-2">Know more</button></span>
+      </div>
+      <p>City on the Red sea</p>
+    </div>  
+  </div>
+
+</div>
+<!-- /////////////////////////////// -->
+<div class="photo2"></div>
+<!-- ///////////////////////// -->
+<div class="bg-primary-subtle rounded mx-auto my-2 " style="height: 100px;" >
+  <div class="mx-auto pt-4 " style="width: 200px;" ><h1>Thanks for</h1></div>
+</div>
+<!-- //////////////////////////////////// -->
+
+<div class="row row-cols-1 row-cols-sm-3 g-4 justify-content-evenly my-5">
+  <div class="col-sm-3 person">
+    <div class="card text-bg-dark">
+      <img src="images/zahi hawass.jpg" class="card-img opacity-50" alt="#"style="width: 317px; height: 400px;">
+      <div class="card-img-overlay ">
+        <h5 class="card-title">All Thanks and appreciation</h5>
+        <p class="card-text"> <i class="far fa-clock"></i> May 15, 2024 </p>
+        <img src="images/zahi hawass.jpg" alt="#" style=" width: 90px; height: 120px;
+         border-radius: 50%; margin-top: 120px; ">
+         <h5 class="text-info">Dr. Zahi Hawass</h5>
+        <p>an Egyptian archaeologist</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-3 person">
+    <div class="card text-bg-dark">
+      <img src="images/walid elbatoty.jpeg" class="card-img opacity-50" alt="#"style="width: 317px; height: 400px;">
+      <div class="card-img-overlay ">
+        <h5 class="card-title">All Thanks and appreciation</h5>
+        <p class="card-text"> <i class="far fa-clock"></i> May 15, 2024 </p>
+        <img src="images/walid elbatoty.jpeg" alt="#" style=" width: 90px; height: 120px;
+         border-radius: 50%; margin-top: 120px; ">
+         <h5 class="text-info">Walid El Batouty</h5>
+        <p>Tourism consultant</p>
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="col-sm-3 person">
+    <div class="card text-bg-dark">
+      <img src="images/Eissa zidan.jpg" class="card-img opacity-50" alt="#"style="width: 317px; height: 400px;">
+      <div class="card-img-overlay ">
+        <h5 class="card-title">All Thanks and appreciation</h5>
+        <p class="card-text"> <i class="far fa-clock"></i> May 15, 2024 </p>
+        <img src="images/Eissa zidan.jpg" alt="#" style=" width: 90px; height: 120px;
+         border-radius: 50%; margin-top: 120px; ">
+         <h5 class="text-info">Eissa Zidan</h5>
+        <p>Director of grand Egyptian Museum</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<!-- /////////////////////////////// -->
+<div class="bg-primary-subtle rounded mx-auto my-2 " style="height: 100px;" >
+  <div class="mx-auto pt-4 " style="width: 300px;" ><h1>Egypt News</h1></div>
+</div>
+
+<!-- /////////////////////////////////////1 -->
+
+    <div class="content vv">
+      <div class="content1">
+        <h4 class="text-info mt-5">Galala City</h4>
+          <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2024</p>
+          <div class="prog"></div>
+           <p class="mt-3">Galala City located on the Galala plateau, which is located between Zaafarana and Ain Sokhna,
+             with an area of 17,000 acres. On the other hand </p>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-microphone"></i> Podcast</button>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-clock"></i> 50 mins</button>
+          <button type="button" class="btn btn-primary mt-4  play"><i class="fas fa-play"></i> Play Episode</button>
+      </div>
+      <div class="content2">
+          <div class="skw"></div>
+          <div class="image"></div>
+      </div>
+    </div>
+    <!-- /////////////////////////2 -->
+    <div class="content vv">
+      <div class="content2">
+        <div class="sk"></div>
+        <div class="image a"></div>
+    </div>
+      <div class="content1">
+        <h4 class="text-info mt-5">Siwa</h4>
+          <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2024</p>
+          <div class="prog"></div>
+           <p class="mt-3">Siwa is the stuff of desert daydreams. Just 50km from the Libyan border this fertile basin,
+             sitting about 25m below sea level and brimming. </p>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-microphone"></i> Podcast</button>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-clock"></i> 30 mins</button>
+          <button type="button" class="btn btn-primary mt-4  play"><i class="fas fa-play"></i> Play Episode</button>
+      </div>
+    </div>
+    <!-- ////////////////////////////////////3 -->
+    <div class="content vv">
+      <div class="content1">
+        <h4 class="text-info mt-5">Red Sea City</h4>
+          <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2024</p>
+          <div class="prog"></div>
+           <p class="mt-3">The chain of red tinted mountains along the coast reflecting its color on the sea water inspired
+             mariners from iniquities to name the sea, the mare rostrum or the red sea.</p>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-microphone"></i> Podcast</button>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-clock"></i> 20 mins</button>
+          <button type="button" class="btn btn-primary mt-4  play"><i class="fas fa-play"></i> Play Episode</button>
+      </div>
+      <div class="content2">
+          <div class="skw"></div>
+          <div class="image b"></div>
+      </div>
+    </div>
+    <!-- //////////////////////////4-->
+    <div class="content vv">
+      <div class="content2">
+        <div class="sk"></div>
+        <div class="image c"></div>
+    </div>
+      <div class="content1">
+        <h4 class="text-info mt-5">Aswan City</h4>
+          <p><i class="fas fa-calendar-alt"></i> Mon, May 25th 2024</p>
+          <div class="prog"></div>
+           <p class="mt-3">Aswan is a Nubian city in the south of Egypt located on the east bank of 
+            the Nile river connected to Cairo with train stations, railways and domestic flights </p>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-microphone"></i> Podcast</button>
+          <button type="button" class="btn btn-secondary mt-4"><i class="fas fa-clock"></i> 15 mins</button>
+          <button type="button" class="btn btn-primary mt-4  play"><i class="fas fa-play"></i> Play Episode</button>
+      </div>
+    </div>
+    <!-- //////////////////////////////////// -->
+    <div class="bg-primary-subtle rounded mx-auto my-2 " style="height: 100px;" >
+      <div class="mx-auto pt-4 " style="width: 200px;" ><h1>Join us</h1></div>
+    </div>
+    <!-- ///////////////////////////////////// -->
+    <div class="social m-auto"style="width: 950px;">
+      <div class="bg-primary-subtle rounded mx-auto my-2 text-center py-4"style="height: 190px; width: 220px;">
+      <h3>Subscribe Now</h3>
+      <div><i class="fab fa-twitter-square text-primary contac"></i></div>
+      <p class="text-center fs-3">Go to link</p>
+      </div>
+
+      <div class="bg-primary-subtle rounded mx-auto my-2 text-center py-4"style="height: 190px; width: 220px;">
+        <h3>Follow</h3>
+        <div><i class="fab fa-whatsapp-square text-success contac"></i></div>
+        <p class="text-center fs-3">Go to link</p>
+        </div>
+
+        <div class="bg-primary-subtle rounded mx-auto my-2 text-center py-4"style="height: 190px; width: 220px;">
+          <h3>Like the page</h3>
+          <div><i class="fab fa-linkedin text-primary contac"></i></div>
+          <p class="text-center fs-3">Go to link</p>
+          </div>
+
+          <div class="bg-primary-subtle rounded mx-auto my-2 text-center py-4"style="height: 190px; width: 220px;">
+          <h3>Watch vedios</h3>
+          <div><i class="fab fa-instagram-square text-danger contac"></i></div>
+          <p class="text-center fs-3">Go to link</p>
+         </div>
+    </div>
+    <!-- /////////////////////////////////////////////// -->
+
+<div class="container-fluid text-center bg-body-secondary">
+  <div class="row border">
+    <div class="col-4">
+      <div class="foot my-2"><div class="nn"> <b>Good Company</b></div></div>
+      
+      
+    </div>
+    <div class="col-4">
+      <div class="foot my-2"><div class="nn"> <b>Important Links</b></div></div>
+    </div>
+    <div class="col-4">
+      <div class="foot my-2"><div class="nn"> <b>Vision</b></div></div>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col-4 pt-4 fs-5">
+        <p>TEL: 3489 456</p>
+        <p> Address: EGYPT</p>
+        <p>Fax: +20 88 55 677</p>
+      </div>
+      <div class="col-4 pt-2">
+        <p><a href="#"class="text-decoration-none fs-4">Visit Us</a></p>
+        <p><a href="#"class="text-decoration-none fs-4">Take alook</a></p>
+        <p><a href="#"class="text-decoration-none fs-4">Your health is mor important</a></p>
+      </div>
+      <div class="col-4 pt-4 fs-5">
+        <p>Serveices for all</p>
+        <p>Provide best serveices</p>
+        <p>You will be better than befor</p>
+      </div>
+  </div>
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p class="fs-4">COPYRIGHT &copy; Egypt Company. ALL RIGHTS</p>
+    </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-12">
+    <p> </p>
+  </div>
+</div>
+
+
+
+</div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/javascript.js"></script> 
+
+</body>
+
+</html>
